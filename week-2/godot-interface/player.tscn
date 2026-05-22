@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cebvqgih37vyk"]
+
+[ext_resource type="Texture2D" uid="uid://cn2j8qaqde3ls" path="res://assets/slime_fire_rest.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://c268hsm17suv0" path="res://player.gd" id="1_onrkg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_onrkg"]
+radius = 27.0
+height = 56.0
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=633799599]
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=857836970]
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=765164499]
+position = Vector2(0, 4)
+shape = SubResource("CapsuleShape2D_onrkg")
