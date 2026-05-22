@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cebvqgih37vyk"]
+
+[ext_resource type="Texture2D" uid="uid://4lnqouy4rqe" path="res://assets/character_beige_idle.png" id="1_4flbx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_onrkg"]
+
+[node name="player" type="CharacterBody2D" unique_id=1621885933]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=216951133]
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1277422680]
+shape = SubResource("CapsuleShape2D_onrkg")
